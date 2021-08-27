@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);           // 2 = a + 1
+        d = b++; alert(d);           // 1 = b ( = 1)
+        c = (2 + ++a); alert(c);      // 5 = 2 + 1 + (a + 1)
+        d = (2 + b++); alert(d);      // 4 = 2 + 2
+        alert(a);                    // 3
+        alert(b);                    // 3
+    </script>
+
+    <script>
+        var a = 2;
+        var x = 1 + (a *= 2);
+        alert("x =  " + x) // x = 5
+    </script>
+
+    <script>
+        var a = 10;
+        var b = -5;
+        var c;
+
+        if (a > 0 && b > 0) {
+            c = a - b;
+            alert("a - b = " + c);
+        }
+        else if (a < 0 && b < 0) {
+            c = a * b;
+            alert("a * b = " + c);
+        }
+        else if (a * b <= 0) {
+            c = a + b;
+            alert("a + b = " + c);
+        }
+    </script>
+
+    <script>
+        var a = 10;
+        switch (a) {
+            case (0):
+                alert('0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (1):
+                alert('1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (2):
+                alert('2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (3):
+                alert('3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (4):
+                alert('4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (5):
+                alert('5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (6):
+                alert('6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (7):
+                alert('7, 8, 9, 10, 11, 12, 13, 14, 15');
+            case (8):
+                alert('8, 9, 10, 11, 12, 13, 14, 15');
+            case (9):
+                alert('9, 10, 11, 12, 13, 14, 15');
+            case (10):
+                alert('10, 11, 12, 13, 14, 15');
+            case (11):
+                alert('11, 12, 13, 14, 15');
+            case (12):
+                alert('12, 13, 14, 15');
+            case (13):
+                alert('13, 14, 15');
+            case (14):
+                alert('14, 15');
+            case (15):
+                alert('15');
+        }
+    </script>
+
+    <script>
+        function plus_n(a, b) {
+            var c = a + b;
+            return c;
+        }
+
+        function minus_n(a, b) {
+            var c = a - b;
+            return c;
+        }
+
+        function mult_n(a, b) {
+            var c = a * b;
+            return c;
+        }
+
+        function div_n(a, b) {
+            if (b == 0)
+                var c = 0;
+            else
+                var c = a / b;
+            return c;
+        }
+    </script>
+
+    <script>
+        function mathOperations(a, b, c) {
+            var d;
+            switch (c) {
+                case "plus":
+                    d = a + b;
+                case "minus":
+                    d = a - b;
+                case 'mult':
+                    d = a * b;
+                case "div":
+                    d = a / b;
+                    return d;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

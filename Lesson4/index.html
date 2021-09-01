@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var x;
+        while (True) {
+            var number = parseInt(prompt("Введите число:", x));
+            if (number <= 999 && number >= 0) {
+                break
+            }
+            else {
+                alert("Введено некоректное число")
+            }
+        }
+
+        var y = parseInt(number / 100);
+        var z = parseInt(number / 10) - y * 10;
+        var a = number - y * 100 - z * 10;
+        console.log("сотня: ", y, "десятки: ", z, "единицы: ", a);
+    </script>
+
+
+</body>
+
+</html>
